@@ -1,0 +1,11 @@
+name: "my neighbour's wifi"
+author: "@attain938"
+description: >
+  I bought a new NIC. The description on the site said I can get my neighbour’s wifi with it. Help me see what you can find from their connection. Last I saw, he was using a VPN through the window.
+type: StaticAttachment
+category: Forensics
+submissionLimit: 5
+difficulty: 10
+dist: ./dist
+flags:
+- TriHack26{c9283806-1baf-48cb-abd1-87db65c0fde5}

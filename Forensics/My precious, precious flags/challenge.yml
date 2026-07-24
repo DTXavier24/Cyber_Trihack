@@ -1,0 +1,11 @@
+name: "My precious, precious flags"
+author: "@attain938"
+description: >
+  Flags. I crave flags. Help me find the important one. I’ve given you my precious, my flag index. Do not be confused. There may be many… But there is only one of my most precious. Remember that everything is remembered. Even if it was deleted. 
+type: StaticAttachment
+category: Forensics
+submissionLimit: 5
+difficulty: 10
+dist: ./dist
+flags:
+- TriHack26{ee780ed7-c7de-4295-97b1-4c1d6baeb0a6}

@@ -1,0 +1,17 @@
+name: A Drink With A View
+author: "@eric"
+description: >
+  One photo, one city that never sleeps.
+
+  This place has a history. What you see today wasn't always here - once upon a time,
+  they served drinks. The spot has closed down, but the internet never forgets.
+
+  Find out what used to be here, track it down online, and on **March 21st, 2018**
+  someone shared a little joke. That joke is your flag.
+type: StaticAttachment
+category: OSINT
+submissionLimit: 5
+difficulty: 10
+dist: ./dist
+flags:
+- TriHack26{toby_is_terrible_toby_is_the_worst_noreaster_ive_ever_known}

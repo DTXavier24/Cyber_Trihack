@@ -1,3 +1,5 @@
+from os import getenv
+
 LEN = 24
 FLAG = getenv('GZCTF_FLAG', 'TriHack{12345678_87654321}') #not the flag 
 

@@ -6,5 +6,7 @@ description: >
   Note: Passive reconnaissance only
 type: StaticAttachment
 category: OSINT
+submissionLimit: 5
+difficulty: 10
 flags:
 - TriHack2026{y0u_f0und_my_s3rv3r_n0w_pl3asz_j0inn}

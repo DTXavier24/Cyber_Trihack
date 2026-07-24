@@ -14,4 +14,4 @@ container:
   memoryLimit: 256
   cpuCount: 1
   storageLimit: 256
-  exposePort: 3000
+  exposePort: 5000

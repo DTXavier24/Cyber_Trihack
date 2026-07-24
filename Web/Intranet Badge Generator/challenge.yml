@@ -1,0 +1,17 @@
+name: "Intranet Badge Generator"
+author: "@narragonien"
+description: >
+  The school intranet has a small "badge generator": type your first name and it renders a welcome message preview for you.
+
+  The preview is built a little too naively, and a basic keyword filter is the only thing standing between you and the server's secrets. The flag lives in an environment variable - go read it.
+type: DynamicContainer
+category: Web
+submissionLimit: 5
+difficulty: 10
+flagTemplate: TriHack26{[GUID]}
+container:
+  flagTemplate: TriHack26{[GUID]}
+  memoryLimit: 256
+  cpuCount: 1
+  storageLimit: 256
+  exposePort: 5000

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intranet Badge Generator - CUPGE</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            background-color: #1a1a1a; 
+            color: #fff; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+        }
+        .container { 
+            background-color: #2d2d2d; 
+            padding: 30px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
+            width: 380px; 
+            text-align: center; 
+            border: 1px solid #444; 
+        }
+        h2 { 
+            color: #00ff66; 
+            margin-bottom: 10px; 
+            font-weight: 500; 
+        }
+        p.subtitle { 
+            font-size: 14px; 
+            color: #aaa; 
+            margin-bottom: 20px; 
+            line-height: 1.4; 
+        }
+        label { 
+            display: block; 
+            text-align: left; 
+            margin-top: 10px; 
+            font-size: 14px; 
+            color: #aaa; 
+        }
+        input[type="text"] { 
+            width: 100%; 
+            padding: 12px; 
+            margin: 8px 0 15px 0; 
+            border: 1px solid #555; 
+            background-color: #222; 
+            color: #fff; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+            font-size: 14px;
+        }
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #00ff66;
+        }
+        button { 
+            width: 100%; 
+            padding: 12px; 
+            background-color: #00ff66; 
+            border: none; 
+            color: #1a1a1a; 
+            font-weight: bold; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            font-size: 16px; 
+            transition: 0.3s; 
+            margin-top: 5px; 
+        }
+        button:hover { 
+            background-color: #00cc52; 
+        }
+        .output-title {
+            text-align: left;
+            font-size: 13px;
+            color: #aaa;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .status-message { 
+            margin-top: 5px; 
+            padding: 12px; 
+            border-radius: 4px; 
+            font-size: 14px; 
+            background-color: #333; 
+            border-left: 3px solid #00ff66; 
+            color: #ccc; 
+            text-align: left;
+            word-break: break-all;
+            font-family: 'Consolas', 'Courier New', monospace;
+        }
+        .error-message { 
+            margin-top: 20px; 
+            padding: 12px; 
+            border-radius: 4px; 
+            font-size: 13px; 
+            background-color: #421a1a; 
+            border-left: 3px solid #ff4d4d; 
+            color: #ff9999; 
+            text-align: left;
+            border: 1px solid #851414;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Intranet Badge Generator</h2>
+    <p class="subtitle">Enter your first name to generate a preview of your welcome message:</p>
+    
+    <form method="POST">
+        <label>First Name</label>
+        <input type="text" name="name" placeholder="admin..." autocomplete="off" required />
+        
+        <button type="submit">Generate</button>
+    </form>
+
+    {% if preview %}
+        {% if "Security filter" in preview %}
+            <div class="error-message">
+                {{ preview }}
+            </div>
+        {% else %}
+            <div class="output-title">Preview Output:</div>
+            <div class="status-message">{{ preview }}</div>
+        {% endif %}
+    {% endif %}
+</div>
+
+</body>
+</html>

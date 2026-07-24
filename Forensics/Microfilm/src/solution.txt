@@ -1,0 +1,35 @@
+======================================================================
+CHALLENGE METADATA
+======================================================================
+Challenge Name: Microfilm
+Category:       Forensics
+Difficulty:     Easy
+Target Flag:    TriHack26{m1cr0d0ts_4r3_0ld_sk00l}
+
+======================================================================
+QUICK WALKTHROUGH
+======================================================================
+
+STEP 1: INSPECTION
+Participants receive two JPEG images (`cover_photo.jpg` and `recovered_film.jpg`).
+Visual inspection reveals identical text layouts with faint, unreadable 
+variance near the bottom section.
+
+STEP 2: IMAGE SUBTRACTION & AMPLIFICATION
+Using Python (PIL) or ImageMagick, calculate the absolute pixel difference 
+between both images and scale up the result:
+
+  $ convert cover_photo.jpg recovered_film.jpg -compose difference \
+    -composite -evaluate multiply 20 difference.png
+
+STEP 3: EXTRACTION
+Opening `difference.png` (or running `solve_microfilm.py`) reveals crisp 
+white text over a dark background near coordinates (50, 400):
+-> FLAG: TriHack26{m1cr0d0ts_4r3_0ld_sk00l}
+
+======================================================================
+VERIFICATION
+======================================================================
+To verify workspace integrity, run:
+$ python3 solve_microfilm.py
+======================================================================

@@ -1,0 +1,19 @@
+name: "The Spy Who Typed Me"
+author: "@JayZee"
+description: >
+  Counter-intelligence tracking teams have flagged a high-ranking mole active within our security infrastructure. The operative managed to access an isolated air-gapped terminal inside a secure government data warehouse to download encrypted state blueprints.
+
+  Physical security locks prevented external storage insertion, forcing the mole to manually type their access override configuration tokens directly into the machine. However, our technical surveillance teams had secretly deployed an inline hardware monitoring intercept tap inside the terminal's workstation desk.
+
+  We have captured the raw hardware signaling packet layer data straight from the station's physical peripheral connections. Because this is an active hardware capture on a physical USB wire, standard network layer filters like HTTP, DNS, or TCP will show absolutely zero results.
+
+  The data is saved in your challenge archive as: `dead_drop.pcap`.
+
+  Your mission is to act as the primary signals analysis team. Audit the raw peripheral signal streams, isolate the raw device input codes, decode the physical signal keys into human-readable text chronologically, and extract the secret passkey flag!
+type: StaticAttachment
+category: Forensics
+submissionLimit: 5
+difficulty: 10
+dist: ./dist
+flags:
+- TriHack26{d3ad_dr0p_c0mpr0m1s3d}

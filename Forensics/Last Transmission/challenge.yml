@@ -1,0 +1,15 @@
+name: "Last Transmission"
+author: "@JayZee"
+description: >
+  Deep space listening posts recently intercepted an anomaly on the 145.800 MHz orbital band-a repeating audio burst containing distinctive, high-pitched acoustic screeching patterns before the signal dropped completely.
+
+  Interception logs confirm that an automated deep-space probe attempted to transmit a telemetry snapshot immediately prior to payload failure.
+
+  Analyze the recovered audio recording (`last_transmission.wav`) and decode the encoded transmission signal to retrieve the visual payload.
+type: StaticAttachment
+category: Forensics
+submissionLimit: 5
+difficulty: 10
+dist: ./dist
+flags:
+- TriHack26{sstv_1s_n0t_d34d_y3t}

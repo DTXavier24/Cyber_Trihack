@@ -1,0 +1,28 @@
+======================================================================
+CHALLENGE SOLUTION: The Midnight Artifacts
+======================================================================
+Flag: TriHack26{t1m3_st0mp_l0g5}
+
+[INVESTIGATION STEPS]
+
+1. Locate Epoch Clue:
+   Extract the raw timestamp "1787019295" provided in the problem description.
+
+2. Time Translation:
+   Convert Epoch 1787019295 to UTC human-readable time format:
+   - Date: July 18, 2026
+   - Time: 02:14:55 AM (02:14:55)
+
+3. Log Analysis:
+   Open "player/latest.log" in a text editor or terminal pager.
+   Filter or search for entries occurring at timestamp "02:14:".
+
+4. Fragment Extraction:
+   Inspect the server warning lines recorded at 02:14:55 and 02:14:56:
+   - [02:14:55] [Server thread/WARN]: Sector ender_chest_payload modified injection point 1: TriHack26{t1m3_
+   - [02:14:56] [Server thread/WARN]: Sector ender_chest_payload modified injection point 2: st0mp_l0g5}
+
+5. Flag Assembly:
+   Concatenate injection point 1 and injection point 2:
+   TriHack26{t1m3_ + st0mp_l0g5} = TriHack26{t1m3_st0mp_l0g5}
+======================================================================

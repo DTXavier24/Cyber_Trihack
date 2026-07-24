@@ -1,0 +1,18 @@
+name: "The Midnight Artifacts"
+author: "@JayZee"
+description: >
+  Emergency notification received! Our private Minecraft survival server infrastructure experienced a stealthy background anomaly during off-peak hours. The perpetrator didn't disrupt gameplay or trigger our high-severity alert systems. Instead, they quietly manipulated server records, blending their traces into ambient event histories.
+
+  The only lead recovered is a single console snippet logged right before the intruder disconnected:
+
+  [ALERT] [Spatial-Storage-Security]: Unauthorized payload sync detected on master thread.
+  [ALERT] Connection Hash: 0xDEADBEEF // Sector: ENDER_CHEST // Epoch Timestamp: 1787019295
+
+  Inspect the provided server log artifact (`latest.log`), trace the events surrounding the given timestamp, and recover the flag fragments injected into the system stream.
+type: StaticAttachment
+category: Forensics
+submissionLimit: 5
+difficulty: 10
+dist: ./dist
+flags:
+- TriHack26{t1m3_st0mp_l0g5}

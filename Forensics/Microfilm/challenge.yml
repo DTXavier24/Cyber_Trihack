@@ -1,0 +1,19 @@
+name: "Microfilm"
+author: "@JayZee"
+description: >
+  Vienna, 1974. A double agent operating inside Sector 7 managed to snapshot a sensitive operational report onto a strip of microfilm before being forced to burn their station.
+
+  To pass through border inspection undetected, the agent took two photographic exposures:
+  1. `cover_photo.jpg` - A standard document transfer frame.
+  2. `recovered_film.jpg` - The operational film reel recovered from the dead drop.
+
+  At first glance, counter-intelligence analysts dismissed `recovered_film.jpg` as an identical duplicate copy. However, intercept logs confirm that a critical intelligence string was embedded into the final exposure before transmission.
+
+  Inspect the physical artifacts and extract the hidden message before the signal goes dark.
+type: StaticAttachment
+category: Steganography
+submissionLimit: 5
+difficulty: 10
+dist: ./dist
+flags:
+- TriHack26{m1cr0d0ts_4r3_0ld_sk00l}

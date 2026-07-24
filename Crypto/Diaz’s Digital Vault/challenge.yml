@@ -1,0 +1,17 @@
+name: "Diaz's Digital Vault"
+author: "@JayZee"
+description: >
+  The sun is setting over Ocean Drive, the neon lights of the Malibu Club are flashing, and Ricardo Diaz is throwing a massive, plate-smashing tantrum inside his Starfish Island mansion because the resistance just intercepted a copy of his private bank ledger, 'cartel_ledger.txt'.
+
+  This file contains 50 high-stakes transactions, but his lazy programmers left behind a glaring weakness: the security lock on each row is mathematically tied to its own 8-digit timestamp string on the left, and the master key is hidden behind a highly rounded, flat timestamp ending perfectly in multiple zeros.
+
+  The VCPD is closing in, so you must scan the ledger, spot the visual anomaly hiding in plain sight, and reverse the encryption using that outlier timestamp as your key.
+
+  You can crack the cipher by applying a classic symmetric bitwise logical operation-commonly represented in programming by the caret ( ^ ) symbol-which has the unique mathematical property of completely restoring the original flag, formatted as TriHack26{}, when the key is applied directly to the hex payload.
+type: StaticAttachment
+category: Cryptography
+submissionLimit: 5
+difficulty: 10
+dist: ./dist
+flags:
+- TriHack26{v1c3_c1ty_fl4t_t1m3_byp4ss}

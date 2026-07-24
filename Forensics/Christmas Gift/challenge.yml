@@ -1,0 +1,11 @@
+name: "Christmas Gift"
+author: "@KnuckleHead"
+description: >
+  Santa left you a gift... but it seems a bit overwrapped. Layer after layer, something is hidden inside. Can you unwrap everything and discover the secret?
+type: StaticAttachment
+category: Forensics
+submissionLimit: 5
+difficulty: 10
+dist: ./dist
+flags:
+- TriHack26{S4NTA_KN0W$_WH4T_Y0U_D1D}

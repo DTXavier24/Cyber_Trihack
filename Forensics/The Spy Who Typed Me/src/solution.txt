@@ -1,0 +1,60 @@
+======================================================================
+CHALLENGE METADATA & VALIDATION PROFILE
+======================================================================
+Challenge Name: Operation - The Spy Who Typed Me
+Category:       Digital Forensics
+Difficulty:     Hard
+Flag Format:    TriHack26{...}
+Target Flag:    TriHack26{d3ad_dr0p_c0mpr0m1s3d}
+
+======================================================================
+DETAILED STEP-BY-STEP PLAYER WALKTHROUGH (WIRESHARK)
+======================================================================
+
+STEP 1: PROTOCOL IDENTIFICATION
+--------------------------------------------------
+The participant opens "dead_drop.pcap" inside Wireshark. By looking 
+at the "Protocol" column, they will notice it does not contain standard 
+network traffic (IP, TCP, HTTP). Instead, it displays "USB" with the 
+info column showing "URB_INTERRUPT in", confirming a hardware capture.
+
+STEP 2: ISOLATING KEYBOARD PAYLOADS
+--------------------------------------------------
+To filter out background noise and view only the actual keystrokes, 
+the player must enter the following display filter into Wireshark:
+-> usb.capdata
+
+STEP 3: ANALYZING THE DATA STRUCT
+--------------------------------------------------
+Clicking on any filtered packet and expanding the "Leftover Capture Data" 
+section reveals an 8-byte hexadecimal array (e.g., 0200040000000000). 
+The user must recognize this as a standard USB HID Keyboard Report:
+* Byte 0: Modifiers (0x02 = Left Shift is active/held down)
+* Byte 2: HID Keycode (The physical character key pressed)
+
+STEP 4: AUTOMATED PAYLOAD EXTRACTION
+--------------------------------------------------
+To extract the raw bytes cleanly without manual clicking, players can 
+use tshark (Wireshark's command line engine) in their terminal:
+$ tshark -r dead_drop.pcap -Y "usb.capdata" -T fields -e usb.capdata > keys.txt
+
+STEP 5: DECODING TO KEYSTROKES
+--------------------------------------------------
+Every real keypress generates a "Key-Down" data row followed by an 
+all-zero "Key-Up" release row (0000000000000000). Mapping the hex values in 
+Byte 2 against a standard USB HID Keyboard Usage Table reveals:
+* 0x04 -> 'a' / 'A'
+* 0x1E -> '1' / '!'
+* 0x2D -> '-' / '_'
+
+Reconstructing the text chronologically reveals:
+"AGENT_KEY:TriHack26{d3ad_dr0p_c0mpr0m1s3d}"
+
+======================================================================
+QUICK VERIFICATION ROUTINE (FOR ORGANIZERS)
+======================================================================
+To instantly confirm the flag integrity inside the player workspace 
+without opening Wireshark, navigate to the "org" folder and run:
+
+$ python3 solve_dead_drop.py
+======================================================================

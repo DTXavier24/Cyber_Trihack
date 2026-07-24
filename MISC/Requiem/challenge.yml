@@ -1,0 +1,13 @@
+name: "Requiem"
+author: "@KnuckleHead"
+description: >
+  Umbrella Corporation's top-secret initiative, Project ELIPHAS, has entered its Final Directive. The Progenitor has spoken, but what does the creator want? We have intercepted a classified image file, but we suspect it contains a multi-layered hidden transmission. All answers are within this image. Look deeper. Then deeper still.
+
+  *Hint: The heart of the shadow pulses in 8-bit.*
+type: StaticAttachment
+category: Misc
+submissionLimit: 5
+difficulty: 10
+dist: ./dist
+flags:
+- TriHack26{R313@$3_T#E_E1PI$}

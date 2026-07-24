@@ -1,0 +1,13 @@
+name: "The Elvish Protocol"
+author: "@KnuckleHead"
+description: >
+  We intercepted a message leaving Rivendell, but the encryption seems to have been corrupted by the enemy. Our scouts managed to recover a single fragment of lore along with the cipher.
+
+  "The text is bound by the Dark Lord's name, but the letters themselves have been shifted forward by the number of rings given to the Dwarf-lords."
+type: StaticAttachment
+category: Cryptography
+submissionLimit: 5
+difficulty: 10
+dist: ./dist
+flags:
+- TriHack26{one_does_not_simply_decrypt_mordor}

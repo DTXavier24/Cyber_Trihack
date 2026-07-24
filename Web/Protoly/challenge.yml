@@ -1,17 +1,9 @@
-name: "Vaulted Trust"
-author: "@ky"
+name: "Protoly"
+author: "@jingeur"
 description: >
-  TriHack Cloud recently moved its account and vault APIs behind a federated GraphQL gateway. A guest account is available, but the production vault only opens for authorized internal operators.
+  Protoly is a tiny prototyping SaaS. Register an account, poke around, and take over the admin account. The flag lives on the admin dashboard at /admin.
 
-  Public endpoint: /graphql
-
-  Guest credentials: username: guest password: guest
-
-  Recover the production vault flag. Notes:
-
-  Introspection is disabled on the public gateway.
-  Internal services are not directly exposed.
-  The gateway accepts JSON GraphQL requests only.
+  There's a Report page: submit a same-site link and a reviewer will open it - in the admin's own browser session.
 type: DynamicContainer
 category: Web
 submissionLimit: 5

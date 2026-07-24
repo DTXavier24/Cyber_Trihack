@@ -1,0 +1,16 @@
+name: "Swerve"
+author: "@Wayne~"
+description: >
+  Just when you think you know where it’s heading, it swerves. Find the perfect phrase, hit the hidden target, and claim the flag.
+type: DynamicContainer
+category: Crypto
+submissionLimit: 5
+difficulty: 10
+provide: ./dist
+flagTemplate: TriHack26{[GUID]}
+container:
+  flagTemplate: TriHack26{[GUID]}
+  memoryLimit: 256
+  cpuCount: 1
+  storageLimit: 256
+  exposePort: 5000

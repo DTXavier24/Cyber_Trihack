@@ -1,0 +1,20 @@
+name: "Hogwarts Library Portal"
+author: "@JayZee"
+description: >
+  The Restricted Section of the Hogwarts Library holds ancient archival records, but the web portal's security checkpoint blocks standard student credentials.
+
+  You have been provided with the local portal gateway executable (`Hogwarts_Library_Portal.exe`). Launching the binary spins up a local instance of the library web portal in your browser (`http://127.0.0.1:5000`).
+
+  Your mission is to bypass the portal's access controls and gain entry into the Restricted Section.
+type: DynamicContainer
+category: Web
+submissionLimit: 5
+difficulty: 10
+provide: ./dist
+flagTemplate: TriHack26{[GUID]}
+container:
+  flagTemplate: TriHack26{[GUID]}
+  memoryLimit: 256
+  cpuCount: 1
+  storageLimit: 256
+  exposePort: 5000

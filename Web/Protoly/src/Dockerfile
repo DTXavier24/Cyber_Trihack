@@ -4,8 +4,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
 WORKDIR /srv/app
-COPY app/package.json ./
-RUN npm install --omit=dev
-COPY app/ ./
+COPY package.json package-lock.json ./
+RUN npm ci --omit=dev
+COPY . ./
 EXPOSE 3000
 CMD ["node", "index.js"]

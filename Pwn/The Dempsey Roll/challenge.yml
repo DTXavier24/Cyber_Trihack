@@ -1,0 +1,18 @@
+name: "The Dempsey Roll"
+author: "@KnuckleHead"
+description: >
+  "Coach Kamogawa says my standard hooks aren't enough to take the championship belt. He programmed the Dempsey Roll into the Gym's Combat Analyzer, but locked it behind memory safeguards until I master the rhythm."
+
+  We managed to dump the Kamogawa Gym's Combat Analyzer binary. The `dempsey_roll_finisher` function is hidden inside, but the menu only allows you to register a standard hook. Can you bypass the gym's safeguards and execute the finishing blow?
+type: DynamicContainer
+category: Pwn
+submissionLimit: 5
+difficulty: 10
+provide: ./dist
+flagTemplate: TriHack26{[GUID]}
+container:
+  flagTemplate: TriHack26{[GUID]}
+  memoryLimit: 256
+  cpuCount: 1
+  storageLimit: 256
+  exposePort: 5000

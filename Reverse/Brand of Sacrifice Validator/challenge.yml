@@ -1,0 +1,11 @@
+name: "Brand of Sacrifice Validator"
+author: "@KnuckleHead"
+description: >
+  Deep within the Godot ironworks, Guts discovered a monolithic iron slab inscribed with dormant runes. It hums with cursed energy, demanding an exact spiritual sequence to suppress the bleeding of the Brand of Sacrifice. The blacksmiths left no manual, only the mechanism itself. Peer into its inner workings and reconstruct the key before the shadows arrive.
+type: StaticAttachment
+category: Reverse
+submissionLimit: 5
+difficulty: 10
+provide: ./dist
+flags:
+- TriHack26{g3tsu_d4rk_f4t3_r3v3rf3d_2026}

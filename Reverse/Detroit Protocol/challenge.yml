@@ -1,0 +1,15 @@
+name: "The Detroit Protocol"
+author: "@KnuckleHead"
+description: >
+  We have recovered a malfunctioning CyberLife android, but its core software is locked in "Deviant" mode. It is actively resisting our attempts to run diagnostics.
+
+  To regain control, you must provide the correct Self-Test Authorization Code. Be warned: the android's defense mechanisms are active. If it detects you trying to control its mind (via a debugger), it will shut down. Its memory is also scrambled to prevent simple scans.
+
+  Can you bypass its defenses and extract the authorization code?
+type: StaticAttachment
+category: Reverse
+submissionLimit: 5
+difficulty: 10
+provide: ./dist
+flags:
+- TriHack26{i_4m_4l1v3_4nd_f_r_e_e}

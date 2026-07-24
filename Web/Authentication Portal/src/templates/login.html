@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Authentication Portal</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #1a1a1a; color: #fff; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .login-container { background-color: #2d2d2d; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); width: 350px; text-align: center; border: 1px solid #444; }
+        h2 { color: #00ff66; margin-bottom: 20px; font-weight: 500; }
+        label { display: block; text-align: left; margin-top: 10px; font-size: 14px; color: #aaa; }
+        input[type="text"], input[type="password"] { width: 100%; padding: 12px; margin: 8px 0 15px 0; border: 1px solid #555; background-color: #222; color: #fff; border-radius: 4px; box-sizing: border-box; }
+        input[disabled] { background-color: #333; color: #666; border-color: #444; cursor: not-allowed; }
+        button { width: 100%; padding: 12px; background-color: #00ff66; border: none; color: #1a1a1a; font-weight: bold; border-radius: 4px; cursor: pointer; font-size: 16px; transition: 0.3s; margin-top: 10px; }
+        button:hover:not([disabled]) { background-color: #00cc52; }
+        button:disabled { background-color: #2d5a3f; color: #1a1a1a; cursor: not-allowed; opacity: 0.6; }
+        .status-message { margin-top: 5px; padding: 10px; border-radius: 4px; font-size: 14px; background-color: #333; border-left: 3px solid #00ff66; color: #ccc; }
+        .ctf-hint { margin-top: 25px; font-size: 0.85em; color: #ff9999; opacity: 0.8; line-height: 1.4; padding: 10px; background-color: #421a1a; border-radius: 4px; border: 1px solid #851414; }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Authentication Portal</h2>
+    
+    <!-- Displayed only on error during POST -->
+    {% if status %}
+        <p class="status-message">{{ status }}</p>
+    {% endif %}
+
+    {% if two_factor_required %}
+        <!-- 2FA INTERFACE BLOCK -->
+        <div class="2fa-box">
+            <p style="color: #ff4d4d; font-weight: bold; margin-bottom: 15px; font-size: 1.1em;">
+                Two-Factor Authentication Required
+            </p>
+            <p style="font-size: 14px; color: #ddd; margin-bottom: 20px;">
+                A 6-digit validation code has been sent via SMS to the number associated with account <strong>{{ username }}</strong>.
+            </p>
+            
+            <form onsubmit="return false;">
+                <input type="text" placeholder="SMS Code (e.g., 482910)" disabled />
+                <button disabled>Verify Code</button>
+            </form>
+        </div>
+    {% else %}
+        <!-- STANDARD LOGIN FORM -->
+        <form action="/login" method="POST">
+            <input type="text" name="website_url" style="display:none !important;" tabindex="-1" autocomplete="off">
+            
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" name="username" required placeholder="admin..." />
+            </div>
+            
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" name="password" required placeholder="••••••••" />
+            </div>
+            
+            <button type="submit">Log In</button>
+        </form>
+    {% endif %}
+</div>
+
+</body>
+</html>

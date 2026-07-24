@@ -1,0 +1,10 @@
+name: SMP
+author: TCP1P
+description: >
+  We launched a Minecraft Java Edition server somewhere in the Lion City, hosted on a cloud platform whose logo has four colors: red, blue, yellow and green. Can you find it?
+
+  Note: Passive reconnaissance only
+type: StaticAttachment
+category: OSINT
+flags:
+- TriHack2026{y0u_f0und_my_s3rv3r_n0w_pl3asz_j0inn}

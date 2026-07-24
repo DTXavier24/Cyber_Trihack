@@ -1,0 +1,20 @@
+name: "legacy Report Renderer"
+author: "@x5471"
+description: >
+  Legacy Report Renderer v2.7 is back online.
+
+  The old template engine now includes strict token sanitization, debug previews, and a safer rendering pipeline. Reports may contain only approved formatting tokens, and all templates are checked before rendering.
+
+  Connect to the service and recover the flag.
+type: DynamicContainer
+category: Pwn
+submissionLimit: 5
+difficulty: 10
+provide: ./dist
+flagTemplate: TriHack26{[GUID]}
+container:
+  flagTemplate: TriHack26{[GUID]}
+  memoryLimit: 256
+  cpuCount: 1
+  storageLimit: 256
+  exposePort: 5000

@@ -1,18 +1,22 @@
-title: "Example A&D Event"
-summary: "Attack & Defense demo — keep your service up, steal flags, patch bugs."
+title: "Cyber Trihack Challenge CTF 2026"
+summary: "A CTF Colloboration between ENSIIE, APU and IQRA"
 content: |
-  ## Example Attack & Defense event
+  ## Cyber Trihack Challenge CTF 2026
 
-  Each team runs the same vulnerable service. The platform plants a fresh flag
-  into every service each tick; capture other teams' flags and submit them
-  while defending (and patching) your own.
+  A collaborative Attack & Defense CTF hosted jointly by **ENSIIE**, **APU**, and
+  **IQRA**, bringing together students from all three institutions to compete
+  in a live security exercise.
 
-# ISO-8601. Local offsets are fine — normalized to UTC on import.
-start: "2026-06-01T09:00:00+07:00"
-end: "2026-06-01T17:00:00+07:00"
+  ### Team Details
 
-hidden: true               # keep hidden until you flip it in the admin UI
+  - Max team size: **3 members**
+  - Max containers per team: **3**
+
+  Good luck, and happy hacking!
+
+hidden: true
 practiceMode: true
-acceptWithoutReview: false
-teamMemberCountLimit: 5
-containerCountLimit: 5
+acceptWithoutReview: true
+writeupRequired: false
+teamMemberCountLimit: 3
+containerCountLimit: 3

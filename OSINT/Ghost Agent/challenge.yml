@@ -1,0 +1,18 @@
+name: A Drink With A View
+author: "@musliz"
+description: >
+  An intelligence operative known only by the handle @s1gint_z3r0 has dropped off the grid.
+
+  His accounts were scrubbed. Almost.
+
+  The only lead we have left: he recently resurfaced under a new life and opened a café.
+
+  Track him down. We don't want the café itself , we want the paper trail behind it. The premises used to be another business, and he bought them from a real-estate promoter whose name starts with the letter "L".
+
+  Give us the name of the previous business and the phone number he had to call to close the deal.
+type: StaticAttachment
+category: OSINT
+submissionLimit: 5
+difficulty: 10
+flags:
+- TriHack26{PreviousBusinessName_PromoterPhoneNumber}

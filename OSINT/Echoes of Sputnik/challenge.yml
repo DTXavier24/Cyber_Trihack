@@ -1,0 +1,17 @@
+name: "Echoes of Sputnik"
+author: "@JayZee"
+description: >
+  Agent NIGHTINGALE has successfully located the debris field from the classified Sputnik-2B launch at coordinates 54.2861° N, 48.2269° E (Ulyanovsk sector, USSR).
+
+  The satellite's secret payload-a coded message-was believed lost. However, we have reason to believe NIGHTINGALE recovered fragments and may have hidden them in plain sight across modern communication channels before going dark.
+
+  Your mission is to trace these digital breadcrumbs, analyze the intercepted surveillance logs, inspect the photographic evidence, and decode the transmission cipher.
+
+  The password for all relevant materials is: `echoes_of_sputnik`
+type: StaticAttachment
+category: OSINT
+submissionLimit: 5
+difficulty: 10
+provide: ./dist
+flags:
+- TriHack26{5putn1k_3ch03s_1n_th3_v01d}

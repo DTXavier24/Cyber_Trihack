@@ -1,0 +1,18 @@
+name: "The Phantom Thief's Calling Card"
+author: "@KnuckleHead"
+description: >
+  Take your time...
+  The Phantom Thieves have targeted a corrupt CEO in Japan. They left a physical calling card near a utility pole somewhere in the city and managed to steal an encrypted archive from his servers.
+
+  We intercepted the archive, but it's password protected. The Phantom Thieves left this riddle to taunt the authorities:
+
+  "Our hideout is right where this photo was taken, hiding in plain sight among the wires that power this city. Find the Town Name. The password to the archive is the exact neighborhood name and block number (all lowercase, English romaji spelling, just give us the neighborhood name and the number with no spaces)."
+
+  Can you identify the exact block and decrypt the file?
+type: StaticAttachment
+category: OSINT
+submissionLimit: 5
+difficulty: 10
+provide: ./dist
+flags:
+- TriHack26{t@k3_y0u4_#e@rt_$h!buY@_881}

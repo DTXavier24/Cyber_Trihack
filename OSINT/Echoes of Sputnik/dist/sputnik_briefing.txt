@@ -1,0 +1,27 @@
+╔══════════════════════════════════════════════════════════════╗
+║              TOP SECRET // EYES ONLY                         ║
+║              OPERATION: ECHOES OF SPUTNIK                    ║
+║              DATE: 1958-11-15                                ║
+╚══════════════════════════════════════════════════════════════╝
+
+FROM: Director of Counter-Intelligence
+TO: Chief, Satellite Recovery Division
+SUBJECT: Debriefing - Agent NIGHTINGALE
+
+Agent NIGHTINGALE has successfully located the debris field from
+the classified Sputnik-2B launch. The crash site was confirmed at
+coordinates 54.2861° N, 48.2269° E (Ulyanovsk sector, USSR).
+
+The satellite's secret payload - a coded message - was believed lost.
+However, we have reason to believe NIGHTINGALE recovered fragments
+and may have hidden them in plain sight across modern communication
+channels before going dark.
+
+Your mission is to trace these digital breadcrumbs. Agent NIGHTINGALE
+was known to use the handle "@nightingale_reborn" on certain platforms.
+
+The password for all relevant materials is: echoes_of_sputnik
+
+The package must be recovered. The cipher must be broken.
+
+- END BRIEFING -

@@ -20,3 +20,4 @@ acceptWithoutReview: true
 writeupRequired: false
 teamMemberCountLimit: 3
 containerCountLimit: 3
+discordWebhook: "https://discord.com/api/webhooks/1529481697169637477/Xeb5plUD6oAj2b5oGJbz-fOWf9FhREK6wEKu5uKPrgu2-SY1aIedYZn0USpU9OPTry52"

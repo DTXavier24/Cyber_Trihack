@@ -1,0 +1,27 @@
+# Challenge Name
+
+Ghost Package
+
+# Challenge Description
+
+A whistleblower has leaked a secret file called "The Ghost Package" (`ghost_package.bin`) which contains the master password to shut down the city's mind-control implants. However, the file is corrupted and will not open normally because its headers are broken. The company has also hidden fake, distracting data inside the image's pixels to trick you. To help the resistance, you must fix the corrupted file, ignore the fake distractions, and find the real password hidden deep inside the file's secret custom data chunks!
+
+# Category
+
+Misc
+
+# Difficulty
+
+Medium
+
+# Challenge Author
+
+@JayZee
+
+# Flag
+
+TriHack26{n31r4l_d4nc3_0v3rl04d}
+
+# Require Service
+
+No

@@ -1,5 +1,5 @@
 name: "Secure Login Portal"
-author: "@narragonien"
+author: "@narragonien (ensIIE)"
 description: >
   The "secure" admin portal claims to be protected against injection. It even scolds you when it catches something suspicious in your input.
 

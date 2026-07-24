@@ -1,5 +1,5 @@
 name: "Matryoshka"
-author: "@louiscrespin"
+author: "@louiscrespin (ensIIE)"
 description: >
   The binary we intercepted greets you, asks for a name and a password, then fails. That surface program is a decoy - the interesting part is carried inside it.
 

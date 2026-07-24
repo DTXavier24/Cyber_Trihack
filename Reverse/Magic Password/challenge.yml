@@ -1,5 +1,5 @@
 name: "Magic Password"
-author: "@louiscrespin"
+author: "@louiscrespin (ensIIE)"
 description: >
   This binary asks you for a password. Get it right and it prints the flag; get it wrong and it just says the password is invalid.
 

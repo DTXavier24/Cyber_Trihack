@@ -1,5 +1,5 @@
 name: "Intranet Badge Generator"
-author: "@narragonien"
+author: "@narragonien (ensIIE)"
 description: >
   The school intranet has a small "badge generator": type your first name and it renders a welcome message preview for you.
 

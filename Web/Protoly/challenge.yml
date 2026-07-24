@@ -11,7 +11,7 @@ difficulty: 10
 flagTemplate: TriHack26{[GUID]}
 container:
   flagTemplate: TriHack26{[GUID]}
-  memoryLimit: 256
+  memoryLimit: 512
   cpuCount: 1
-  storageLimit: 256
+  storageLimit: 512
   exposePort: 3000

@@ -1,0 +1,11 @@
+name: Deadlock
+author: "@0A"
+description: >
+  Turns out in 2070, AI enslaved humans and uses them as thread schedulers.
+type: StaticAttachment
+category: Reverse
+submissionLimit: 5
+difficulty: 10
+provide: ./dist
+flags:
+- TriHack26{d34d10ck5_423_23411y_4nn0y1n9_c588647f_8af54dfa8a38f5}

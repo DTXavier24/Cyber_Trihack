@@ -1,0 +1,19 @@
+name: "Split Horizon"
+author: "@ky"
+description: >
+  Northwind Insights runs a reporting dashboard behind an edge cache.
+
+  Public summaries are available to everyone, but restricted reports are only reachable from the private control plane. The platform team recently migrated part of the application to a new routing layer and enabled aggressive caching for report endpoints.
+
+  Something about the edge and the origin no longer agrees.
+type: DynamicContainer
+category: Web
+submissionLimit: 5
+difficulty: 10
+flagTemplate: TriHack26{[GUID]}
+container:
+  flagTemplate: TriHack26{[GUID]}
+  memoryLimit: 256
+  cpuCount: 1
+  storageLimit: 256
+  exposePort: 5000

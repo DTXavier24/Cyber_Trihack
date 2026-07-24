@@ -1,0 +1,16 @@
+{
+  "name": "split-horizon-ctf",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Advanced web exploitation CTF challenge: edge cache desynchronization.",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node --preserve-symlinks-main scripts/run-local.js",
+    "start:edge": "node --preserve-symlinks-main services/edge.js",
+    "start:origin": "node --preserve-symlinks-main services/origin.js",
+    "check": "node --preserve-symlinks-main scripts/smoke.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

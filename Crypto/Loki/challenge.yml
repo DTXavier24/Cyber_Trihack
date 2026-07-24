@@ -1,0 +1,15 @@
+name: "Loki"
+author: "@Ficus"
+description: >
+  Thor has been hunting his brother Loki through the garden of Eden. He finds a snake that will not speak plainly. When pressed, it finally answers: "My words may only make sense through yours..." - then it turns around, its back facing Thor, and continues.
+
+  You are given a single file, crypted. It opens with a readable story and then dissolves into noise. Loki's hidden reply is in that noise, and the story itself tells you how to read it.
+
+  ** Wrapped the decoded text with TriHack26{...} **
+type: StaticAttachment
+category: Crypto
+submissionLimit: 5
+difficulty: 10
+provide: ./dist
+flags:
+- Trihack26{"Brother, I know I am but a little mischief god ... this kind of predictions were never exact.}

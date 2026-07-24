@@ -1,0 +1,17 @@
+name: "Never Gonna Happen"
+author: "@louiscrespin"
+description: >
+  You are handed a small Linux binary. When you run it, it just prints Failed ! and exits.
+
+  There is a branch that prints the flag - but it only runs under a condition that will never be true on a real machine. Trying to force that condition is a dead end.
+
+  Read what that branch actually does, and reproduce it yourself.
+
+  ** Wrapped the decoded text with TriHack26{...} **
+type: StaticAttachment
+category: Reverse
+submissionLimit: 5
+difficulty: 10
+provide: ./dist
+flags:
+- TriHack26{4Hkqe31QIO4d}

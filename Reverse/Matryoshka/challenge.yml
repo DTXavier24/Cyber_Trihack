@@ -1,0 +1,13 @@
+name: "Matryoshka"
+author: "@louiscrespin"
+description: >
+  The binary we intercepted greets you, asks for a name and a password, then fails. That surface program is a decoy - the interesting part is carried inside it.
+
+  ** Wrapped the decoded text with TriHack26{...} **
+type: StaticAttachment
+category: Reverse
+submissionLimit: 5
+difficulty: 10
+provide: ./dist
+flags:
+- TriHack26{r3jX6CUIra}

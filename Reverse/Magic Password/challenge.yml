@@ -1,0 +1,15 @@
+name: "Magic Password"
+author: "@louiscrespin"
+description: >
+  This binary asks you for a password. Get it right and it prints the flag; get it wrong and it just says the password is invalid.
+
+  You don't need to guess the exact password the author had in mind - you only need one that satisfies the check. Find out what the validation function really tests.
+
+  ** Wrapped the decoded text with TriHack26{...} **
+type: StaticAttachment
+category: Reverse
+submissionLimit: 5
+difficulty: 10
+provide: ./dist
+flags:
+- TriHack26{h2cSKr6sw6}

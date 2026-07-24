@@ -1,0 +1,18 @@
+title: "Example A&D Event"
+summary: "Attack & Defense demo — keep your service up, steal flags, patch bugs."
+content: |
+  ## Example Attack & Defense event
+
+  Each team runs the same vulnerable service. The platform plants a fresh flag
+  into every service each tick; capture other teams' flags and submit them
+  while defending (and patching) your own.
+
+# ISO-8601. Local offsets are fine — normalized to UTC on import.
+start: "2026-06-01T09:00:00+07:00"
+end: "2026-06-01T17:00:00+07:00"
+
+hidden: true               # keep hidden until you flip it in the admin UI
+practiceMode: true
+acceptWithoutReview: false
+teamMemberCountLimit: 5
+containerCountLimit: 5

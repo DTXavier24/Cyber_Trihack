@@ -6,6 +6,6 @@ type: StaticAttachment
 category: Misc
 submissionLimit: 5
 difficulty: 10
-dist: ./dist
+provide: ./dist
 flags:
 - TriHack26{n31r4l_d4nc3_0v3rl04d}

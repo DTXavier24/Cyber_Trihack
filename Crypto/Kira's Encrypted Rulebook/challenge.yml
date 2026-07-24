@@ -6,6 +6,6 @@ type: StaticAttachment
 category: Crypto
 submissionLimit: 5
 difficulty: 10
-dist: ./dist
+provide: ./dist
 flags:
 - TriHack26{k14@_r0tZG_shInig@mi_rules}

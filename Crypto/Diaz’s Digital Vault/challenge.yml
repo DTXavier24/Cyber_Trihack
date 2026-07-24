@@ -9,9 +9,9 @@ description: >
 
   You can crack the cipher by applying a classic symmetric bitwise logical operation-commonly represented in programming by the caret ( ^ ) symbol-which has the unique mathematical property of completely restoring the original flag, formatted as TriHack26{}, when the key is applied directly to the hex payload.
 type: StaticAttachment
-category: Cryptography
+category: Crypto
 submissionLimit: 5
 difficulty: 10
-dist: ./dist
+provide: ./dist
 flags:
 - TriHack26{v1c3_c1ty_fl4t_t1m3_byp4ss}

@@ -14,6 +14,6 @@ type: StaticAttachment
 category: Steganography
 submissionLimit: 5
 difficulty: 10
-dist: ./dist
+provide: ./dist
 flags:
 - TriHack26{m1cr0d0ts_4r3_0ld_sk00l}

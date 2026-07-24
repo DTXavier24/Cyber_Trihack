@@ -14,9 +14,9 @@ description: >
 
   Target Ciphertext: `345a6f506769719a9661716e98556e3d586c94976e549960543d5a9956995a5999645b`
 type: StaticAttachment
-category: Cryptography
+category: Crypto
 submissionLimit: 5
 difficulty: 10
-dist: ./dist
+provide: ./dist
 flags:
 - TriHack26{kn0wn_pl41nt3xt_r3v3rs3d}

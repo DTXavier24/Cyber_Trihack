@@ -5,9 +5,9 @@ description: >
 
   "The text is bound by the Dark Lord's name, but the letters themselves have been shifted forward by the number of rings given to the Dwarf-lords."
 type: StaticAttachment
-category: Cryptography
+category: Crypto
 submissionLimit: 5
 difficulty: 10
-dist: ./dist
+provide: ./dist
 flags:
 - TriHack26{one_does_not_simply_decrypt_mordor}

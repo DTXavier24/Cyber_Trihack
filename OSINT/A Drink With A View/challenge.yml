@@ -12,6 +12,6 @@ type: StaticAttachment
 category: OSINT
 submissionLimit: 5
 difficulty: 10
-dist: ./dist
+provide: ./dist
 flags:
 - TriHack26{toby_is_terrible_toby_is_the_worst_noreaster_ive_ever_known}

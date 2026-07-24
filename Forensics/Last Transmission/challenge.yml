@@ -10,6 +10,6 @@ type: StaticAttachment
 category: Forensics
 submissionLimit: 5
 difficulty: 10
-dist: ./dist
+provide: ./dist
 flags:
 - TriHack26{sstv_1s_n0t_d34d_y3t}

@@ -1,5 +1,5 @@
 name: "Split Horizon"
-author: "@ky"
+author: "@ky (FSEC-SS)"
 description: >
   Northwind Insights runs a reporting dashboard behind an edge cache.
 

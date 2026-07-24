@@ -1,5 +1,5 @@
 name: "JIT Jutsu"
-author: "@0A"
+author: "@0A (FSEC-SS)"
 description: >
   My static analyzer mathematically proved this sandbox is unhackable. Have fun!
 type: DynamicContainer

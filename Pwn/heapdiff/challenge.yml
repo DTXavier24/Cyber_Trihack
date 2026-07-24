@@ -1,5 +1,5 @@
 name: "heapdiff"
-author: "@x5471"
+author: "@x5471 (FSEC-SS)"
 description: >
   heapdiff is a document diffing service that supports version commits, hunk views, annotations, squashing, and patch export.
 

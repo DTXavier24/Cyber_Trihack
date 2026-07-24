@@ -1,5 +1,5 @@
 name: "Vaulted Trust"
-author: "@ky"
+author: "@ky (FSEC-SS)"
 description: >
   TriHack Cloud recently moved its account and vault APIs behind a federated GraphQL gateway. A guest account is available, but the production vault only opens for authorized internal operators.
 

@@ -1,0 +1,10 @@
+name: "Branching Factor"
+author: "@Wayne~"
+description: >
+  Small exponent. Big modulus. Something about it feels constructed. Peel it apart carefully as not every path leads to the flag...
+type: StaticAttachment
+category: Crypto
+submissionLimit: 5
+difficulty: 10
+flags:
+- TriHack26{9e3d6c4a-7248-4f50-b5dd-6e821df44a90}

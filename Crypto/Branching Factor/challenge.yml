@@ -6,6 +6,6 @@ type: StaticAttachment
 category: Crypto
 submissionLimit: 5
 difficulty: 10
-provide: "https://google.com"
+provide: ./dist
 flags:
 - TriHack26{9e3d6c4a-7248-4f50-b5dd-6e821df44a90}

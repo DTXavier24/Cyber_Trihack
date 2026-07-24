@@ -1,0 +1,16 @@
+name: "Support Ticket Desk"
+author: "@jerrell._."
+description: >
+  Leave a message for support. With the right wording, someone else might answer.
+type: DynamicContainer
+category: Pwn
+submissionLimit: 5
+difficulty: 10
+provide: ./dist
+flagTemplate: TriHack26{[GUID]}
+container:
+  flagTemplate: TriHack26{[GUID]}
+  memoryLimit: 256
+  cpuCount: 1
+  storageLimit: 256
+  exposePort: 5000

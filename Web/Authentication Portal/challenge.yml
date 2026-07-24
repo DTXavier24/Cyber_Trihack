@@ -1,5 +1,5 @@
-name: "Split Horizon"
-author: "@ky"
+name: "Authentication Portal"
+author: "@narragonien"
 description: >
   Northwind Insights runs a reporting dashboard behind an edge cache.
 

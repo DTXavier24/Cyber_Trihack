@@ -1,5 +1,5 @@
 name: "The Ten Rings Transmission"
-author: "@KnuckleHead"
+author: "@KnuckleHead (IU)"
 description: >
   We intercepted a secured communications channel used by the Ten Rings. They are not using standard AES or RSA; they have developed their own custom byte-level encryption algorithm.
 

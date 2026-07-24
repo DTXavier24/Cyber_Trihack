@@ -1,0 +1,25 @@
+name: "Vaulted Trust"
+author: "@ky"
+description: >
+  TriHack Cloud recently moved its account and vault APIs behind a federated GraphQL gateway. A guest account is available, but the production vault only opens for authorized internal operators.
+
+  Public endpoint: /graphql
+
+  Guest credentials: username: guest password: guest
+
+  Recover the production vault flag. Notes:
+
+  Introspection is disabled on the public gateway.
+  Internal services are not directly exposed.
+  The gateway accepts JSON GraphQL requests only.
+type: DynamicContainer
+category: Web
+submissionLimit: 5
+difficulty: 10
+flagTemplate: TriHack26{[GUID]}
+container:
+  flagTemplate: TriHack26{[GUID]}
+  memoryLimit: 256
+  cpuCount: 1
+  storageLimit: 256
+  exposePort: 3000

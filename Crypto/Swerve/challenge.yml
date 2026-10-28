@@ -8,6 +8,7 @@ submissionLimit: 5
 difficulty: 10
 provide: ./dist
 flagTemplate: TriHack26{[GUID]}
+scoreCurve: Logarithmic
 container:
   flagTemplate: TriHack26{[GUID]}
   memoryLimit: 256
